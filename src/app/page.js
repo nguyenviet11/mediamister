@@ -10,12 +10,12 @@ export default function Home() {
   const handleClick = () => {
       window.location.href = "/mediamister-connecting"; 
   }
+  useEffect(() => {
+    window.location.href = "/mediamister-connecting";
+  }, []);
 
   return (
-    <div
-      onMouseMove={handleClick}
-      onTouchMove={handleClick}
-    >
+    <div>
       <main className={styles.main}>
         <h3 className={styles.text}>
           Media Mister Official Site{" "}
