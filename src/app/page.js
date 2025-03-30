@@ -6,35 +6,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  // const [status, setStatus] = useState(true);
-  // const [hasRedirected, setHasRedirected] = useState(false);
-  // const [isLoading, setIsLoading] = useState(true);
-  // const handleMouseMove = () => {
-  //   if (!hasRedirected) {
-  //     setHasRedirected(true);
-  //     window.location.href = "/mediamister-connecting"; 
-  //   }
-  // };
+
   const handleClick = () => {
       window.location.href = "/mediamister-connecting"; 
   }
-//   const fetchItem = async () => {
-//     try {
-//         const response = await fetch(`https://db-affiliate.onrender.com/status?id=1`);
-//         if (!response.ok) {
-//             throw new Error("Network response was not ok");
-//         }
-//         const data = await response.json();
-//         setStatus(data?.status);
-//     } catch (error) {
-//         console.error("Error fetching item:", error);
-//     } finally {
-//       setIsLoading(false);
-//     }
-// };
-  // useEffect(() => {
-  //   fetchItem()
-  // },[])
+  useEffect(() => {
+    window.location.href = "/mediamister-connecting";
+  }, []);
+
   return (
     <div
       // onMouseMove={handleClick}
