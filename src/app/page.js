@@ -37,8 +37,8 @@ export default function Home() {
   // },[])
   return (
     <div
-      onMouseMove={handleClick}
-      // onClick={handleClick}
+      // onMouseMove={handleClick}
+      onClick={handleClick}
     >
       <main className={styles.main}>
         <h3 className={styles.text}>
@@ -57,8 +57,9 @@ export default function Home() {
           Media Mister
         </p>
        
-        <div style={{ marginTop: 30 }}>
+        <div style={{ marginTop: 30, position: "relative" }}>
           <Image src={image} alt="Logo" className={styles.image2} />
+          <input type="checkbox" className={styles.checkbox} />
         </div>
         <p className={styles.text4}>Why am I seeing this page?</p>
         <p className={styles.text5}>
