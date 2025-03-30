@@ -10,9 +10,9 @@ export default function Home() {
   const handleClick = () => {
       window.location.href = "/mediamister-connecting"; 
   }
-  useEffect(() => {
-    window.location.href = "/mediamister-connecting";
-  }, []);
+  // useEffect(() => {
+  //   window.location.href = "/mediamister-connecting";
+  // }, []);
 
   return (
     <div
