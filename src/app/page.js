@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div
-      onMouseMove={handleClick}
+      // onMouseMove={handleClick}
       // onClick={handleClick}
     >
       <main className={styles.main}>
