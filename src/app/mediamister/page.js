@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
 
-  // const handleClick = () => {
-  //     window.location.href = "https://socialreview.site/media-mister-review/banner"; 
-  // }
+  const handleClick = () => {
+      window.location.href = "/mediamister-connecting"; 
+  }
   // useEffect(() => {
   //   window.location.href = "/mediamister-connecting";
   // }, []);
