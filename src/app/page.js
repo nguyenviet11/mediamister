@@ -7,17 +7,14 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
 
-  // const handleClick = () => {
-  //     window.location.href = "/mediamister-connecting"; 
-  // }
-  // useEffect(() => {
-  //   window.location.href = "/mediamister-connecting";
-  // }, []);
+  const handleClick = () => {
+      window.location.href = "/mediamister-connecting"; 
+  }
 
   return (
     <div
       // onMouseMove={handleClick}
-      // onClick={handleClick}
+      onClick={handleClick}
     >
       <main className={styles.main}>
         <h3 className={styles.text}>
